@@ -10,12 +10,12 @@ variable "docker_host" {
   default = "unix:///var/run/docker.sock"
 }
 
-# Create a Docker network for the containers
+# Creating a Docker network for connecting the containers
 resource "docker_network" "web_net" {
   name = "web_net"
 }
 
-# Nginx container configuration
+# First container - Nginx configuration
 resource "docker_container" "nginx" {
   name = "nginx"
   image = "nginx:latest"
@@ -24,6 +24,7 @@ resource "docker_container" "nginx" {
     internal = 80
     external = 443
   }
+
   # Mount SSL certificates volume (configuration to be added later)
   # mount {
   #   source = docker_volume.ssl_cert.name
@@ -34,7 +35,7 @@ resource "docker_container" "nginx" {
   # command = ["nginx", "-g", "daemon off;"]
 }
 
-# App container configuration
+# Second container - App configuration
 resource "docker_container" "app" {
   name = "app"
   image = "alpine:latest"
@@ -49,7 +50,7 @@ resource "docker_container" "app" {
 # resource "null_resource" "local_dns" {
 #   name = "local_dns_entry"
 #   provisioner "local-exec" {
-#     command = "echo 127.0.0.1 your-fake-domain.com >> /etc/hosts"
+#     command = "echo 127.0.0.1 daftpunk.com >> /etc/hosts"
 #   }
 # }
 
