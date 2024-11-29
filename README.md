@@ -31,6 +31,6 @@ and ssl configuration to be implemented.
 - Python 3.5 or later (python ≥ 3.6 is recommended) and pip are installed
 - Docker environment installed (docker-compose)
 - Terraform environment installed
-- Ensure firewall allows outbound traffic to necessary endpoits 
+- Ensure firewall allows outbound traffic to necessary endpoints 
 
 ## Installation
