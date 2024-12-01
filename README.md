@@ -14,7 +14,7 @@ and ssl configuration to be implemented.
     - verify that there is dns redirection with /etc/hosts to some fake dns name (use your imagination)
     - print out the ip address of nginx container
 
-![Nginx](nginx_logo.png) ![Docker](docker_logo.png)
+![Nginx](nginx_logo.png) ![Docker](dockerlogo.png)
 
 ## Table Of Contents
 
