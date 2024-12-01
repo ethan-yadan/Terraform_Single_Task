@@ -34,3 +34,13 @@ and ssl configuration to be implemented.
 - Ensure firewall allows outbound traffic to necessary endpoints 
 
 ## Installation
+
+### Updating, upgarding and installing in linux debian: 
+
+- ''' sudo apt update '''
+- ''' sudo apt-get upgrade '''
+- ''' sudo apt install python3-pip '''
+- ''' sudo apt install docker-compose '''
+- ''' sudo apt install default-jdk '''
+
+
