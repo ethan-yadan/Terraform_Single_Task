@@ -36,11 +36,11 @@ and ssl configuration to be implemented.
 ## Directory Structure
 
 terraform-nginx-loadbalancer/
->
+|
 ── main.tf
->
+|
 ── nginx.conf
->
+|
 ── Dockerfile
 
 ## Breakdown 
