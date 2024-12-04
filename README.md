@@ -19,7 +19,7 @@ and ssl configuration to be implemented.
 ## Table Of Contents
 
 - [Prerequisites](#prerequisites)
-- [Links](#links) 
+- [Directory Structure](#directory structure) 
 - [Usage](#usage)
 - [Script](#script)
 - [Installation](#installation)
@@ -32,6 +32,13 @@ and ssl configuration to be implemented.
 - Docker environment installed (docker-compose)
 - Terraform environment installed
 - Ensure firewall allows outbound traffic to necessary endpoints 
+
+## Directory Structure
+
+terraform-nginx-loadbalancer/
+├── main.tf
+├── nginx.conf
+└── Dockerfile
 
 ## Installation
 
