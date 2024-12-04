@@ -1,6 +1,6 @@
-![Terraform Arch](Terraform.jpg)
-
 # Terraform Single File Docker Task 
+
+![Terraform Arch](Terraform.jpg)
 
 This task requires to create terraform project file that will start multi container environment with nginx as loadbalancer 
 and ssl configuration to be implemented.
