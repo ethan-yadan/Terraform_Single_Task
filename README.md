@@ -47,7 +47,7 @@ terraform-nginx-loadbalancer/
 
 - Nginx Container: The Nginx container will act as a reverse proxy with SSL configured. It will forward requests to the app container.
 - App Container: The app container will run a simple web server that responds with "Hello World."
-- DNS Redirection: I'll use /etc/hosts to create a fake DNS name.
+- DNS Redirection: I'll use /etc/hosts to create a aragorn.local DNS name.
 - Terraform Configuration: The main.tf file will be used to configure the Docker containers, setup DNS redirection, and print the IP address of the Nginx container.
 
 ## Installation
