@@ -74,4 +74,4 @@ terraform-nginx-loadbalancer/
 
 
 ## Contributing 
-Standing on the shoulders of giants 
+Gigantum humeris insidentes
