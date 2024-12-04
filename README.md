@@ -19,8 +19,8 @@ and ssl configuration to be implemented.
 ## Table Of Contents
 
 - [Prerequisites](#prerequisites)
-- [Directory Structure](#directory structure) 
-- [Usage](#usage)
+- [DirectoryStructure](#directorystructure) 
+- [Breakdown](#breakdown)
 - [Script](#script)
 - [Installation](#installation)
 - [Contributing](#contributing)
@@ -36,9 +36,19 @@ and ssl configuration to be implemented.
 ## Directory Structure
 
 terraform-nginx-loadbalancer/
-> ── main.tf
-> ── nginx.conf
-> ── Dockerfile
+>
+── main.tf
+>
+── nginx.conf
+>
+── Dockerfile
+
+## Breakdown 
+
+- Nginx Container: The Nginx container will act as a reverse proxy with SSL configured. It will forward requests to the app container.
+- App Container: The app container will run a simple web server that responds with "Hello World."
+- DNS Redirection: I'll use /etc/hosts to create a fake DNS name.
+- Terraform Configuration: The main.tf file will be used to configure the Docker containers, setup DNS redirection, and print the IP address of the Nginx container.
 
 ## Installation
 
