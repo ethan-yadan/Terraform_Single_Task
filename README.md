@@ -63,9 +63,15 @@ terraform-nginx-loadbalancer/
 - ''' sudo mkdir tasks\terraform '''
 - ''' cd tasks\terraform '''
 - ''' git init '''
-- ''' git clone 
+- ''' git clone https://github.com/ethan-yadan/Terraform_Single_Task.git '''
 - ''' ./setup.sh '''
 - ''' ./ssl.sh '''
-- 
+- ''' terraform init '''
+- ''' terraform fmt main.tf '''
+- ''' terraform apply '''
+
+- Open a browser and go to https://aragorn.local:8443. You should see the "Hello World" response from the app container.
 
 
+## Contributing 
+Standing on the shoulders of giants 
