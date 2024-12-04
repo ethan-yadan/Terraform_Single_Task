@@ -62,7 +62,7 @@ terraform-nginx-loadbalancer/
 - ''' sudo apt install python3-pip '''
 - ''' sudo mkdir tasks\terraform '''
 - ''' cd tasks\terraform '''
-- ''' git init '''
+- ''' sudo git init '''
 - ''' git clone https://github.com/ethan-yadan/Terraform_Single_Task.git '''
 - ''' ./setup.sh '''
 - ''' ./ssl.sh '''
