@@ -63,7 +63,7 @@ terraform-nginx-loadbalancer/
 - ''' sudo mkdir tasks\terraform '''
 - ''' cd tasks\terraform '''
 - ''' sudo git init '''
-- ''' git clone https://github.com/ethan-yadan/Terraform_Single_Task.git '''
+- ''' sudo git clone https://github.com/ethan-yadan/Terraform_Single_Task.git '''
 - ''' ./setup.sh '''
 - ''' ./ssl.sh '''
 - ''' terraform init '''
