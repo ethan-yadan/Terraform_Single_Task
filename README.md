@@ -52,12 +52,20 @@ terraform-nginx-loadbalancer/
 
 ## Installation
 
-### Updating, upgarding and installing in linux debian: 
+- ./setup.sh
+- ./ssl.sh 
+
+### Execution steps: 
 
 - ''' sudo apt update '''
 - ''' sudo apt-get upgrade '''
 - ''' sudo apt install python3-pip '''
-- ''' sudo apt install docker-compose '''
-- ''' sudo apt install default-jdk '''
+- ''' sudo mkdir tasks\terraform '''
+- ''' cd tasks\terraform '''
+- ''' git init '''
+- ''' git clone 
+- ''' ./setup.sh '''
+- ''' ./ssl.sh '''
+- 
 
 
