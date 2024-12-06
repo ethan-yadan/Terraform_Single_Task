@@ -38,6 +38,9 @@ function terraform_install(){
     echo "Terraform Installation Complete"
 }
 
+# call functions 
+docker_install
+terraform_install
 
 
 
