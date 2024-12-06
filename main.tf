@@ -1,6 +1,8 @@
 # creating a docker network to allow communication between nginx docker and app docker 
 
-provider "docker" {}
+provider "docker" {
+  version = "~> 3.0"
+}
 
 resource "docker_network" "app_network" {
   name = "app-network"
