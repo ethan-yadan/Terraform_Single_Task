@@ -14,9 +14,9 @@ function generate_ssl(){
 function create_cert_dir(){
     if [ ! -d "~/etc/nginx/certs" ]; then 
         sudo mkdir /etc/nginx/certs
-        echo "Directory /etc/nginx/certs created"
+        echo "Directory ~/etc/nginx/certs created"
     else 
-        echo "Directory /etc/nginx/certs already created"
+        echo "Directory ~/etc/nginx/certs already created"
     fi 
 }
 
