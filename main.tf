@@ -1,10 +1,7 @@
 # creating a docker network to allow communication between nginx docker and app docker 
 
 
-provider "docker" {
-source = "kreuzwerker/docker"
-      version = "3.0.2"
-}
+provider "docker" {}
 
 resource "docker_network" "app_network" {
   name = "app-network"
