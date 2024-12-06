@@ -1,6 +1,7 @@
 #!/bin/bash 
 
-set -x # Exit script if any error accours 
+set -e  # Exit script if any error occurs
+set -x  # Enable debugging, prints each command as it's executed
 
 # Function to install Docker Compose 
 function docker_install(){
