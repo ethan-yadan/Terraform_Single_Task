@@ -12,7 +12,7 @@ function generate_ssl(){
 
 # Creating Certs Directory 
 function create_cert_dir(){
-    if [ ! -d "/etc/nginx/certs" ]; then 
+    if [ ! -d "~/etc/nginx/certs" ]; then 
         sudo mkdir /etc/nginx/certs
         echo "Directory /etc/nginx/certs created"
     else 
@@ -23,8 +23,8 @@ function create_cert_dir(){
 # Copy Certificate and Key files to Certs Directory 
 function copy_cert_key(){
     if [ -f "nginx.crt" ] && [ -f "nginx.key" ]; then 
-        sudo cp nginx.crt /etc/nginx/certs/
-        sudo cp nginx.key /etc/nginx/certs/
+        sudo cp nginx.crt ~/etc/nginx/certs/
+        sudo cp nginx.key ~/etc/nginx/certs/
         echo "Certificate and Key copied to /etc/nginx/certs"
     else 
         echo "SSL certificate or key files do not exists" 
@@ -35,10 +35,10 @@ function copy_cert_key(){
 # Setting permissions to certificate and key files 
 function permissions(){
 
-    sudo chown nginx:nginx /etc/nginx/certs/nginx.crt
-    sudo chown nginx:nginx /etc/nginx/certs/nginx.key
-    sudo chmod 644 /etc/nginx/certs/nginx.crt
-    sudo chmod 600 /etc/nginx/certs/nginx.key
+    sudo chown nginx:nginx ~/etc/nginx/certs/nginx.crt
+    sudo chown nginx:nginx ~/etc/nginx/certs/nginx.key
+    sudo chmod 644 ~/etc/nginx/certs/nginx.crt
+    sudo chmod 600 ~/etc/nginx/certs/nginx.key
     echo "Permissions set for certificate and key"
 }
 
