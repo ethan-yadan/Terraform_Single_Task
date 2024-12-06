@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-set -e # Exit script if any error accours 
+set -x # Exit script if any error accours 
 
 # Function to install Docker Compose 
 function docker_install(){
