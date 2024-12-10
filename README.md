@@ -71,6 +71,7 @@ terraform-nginx-loadbalancer/
 - ''' ./ssl.sh '''
 - ''' terraform init '''
 - ''' terraform fmt main.tf '''
+- ''' terraform validate '''
 - ''' terraform apply '''
 
 - Open a browser and go to https://aragorn.local:8443. You should see the "Hello World" response from the app container.
