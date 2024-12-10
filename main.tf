@@ -75,7 +75,7 @@ resource "docker_container" "app_container" {
     alias   = "app"
   }
  
-depends_on = [docker_image.app_image]
+depends_on = [docker_image.app_image.image_id]
 }
 
 # redirects aragorn.local DNS name to local IP address 
