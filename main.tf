@@ -38,7 +38,7 @@ resource "docker_image" "app_image" {
 
 resource "docker_container" "nginx_container" {
   name  = "nginx-container"
-  image = docker_image.nginx_image.latest
+  image = docker_image.nginx_image.image_id
   ports {
     internal = 80
     external = 8081
@@ -60,7 +60,7 @@ resource "docker_container" "nginx_container" {
 
 resource "docker_container" "app_container" {
   name  = "app-container"
-  image = docker_image.app_image.latest
+  image = docker_image.app_image.image_id
   ports {
     internal = 8080
     external = 8080
