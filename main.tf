@@ -59,7 +59,7 @@ resource "docker_container" "nginx_container" {
     name    = docker_network.app_network.name
     alias   = "nginx"
   }
-  depends_on = [docker_image.nginx_image]
+  depends_on = [docker_image.nginx_image.image_id]
 }
 
 resource "docker_container" "app_container" {
@@ -73,7 +73,7 @@ resource "docker_container" "app_container" {
     name    = docker_network.app_network.name
     alias   = "app"
   }
-  depends_on = [docker_image.app_image]
+  depends_on = [docker_image.app_image.image_id]
 }
 
 # redirects aragorn.local DNS name to local IP address 
