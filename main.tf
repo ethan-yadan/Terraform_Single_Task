@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     docker = {
-      source = "reuzwerker/docker"
+      source = "kreuzwerker/docker"
       version = "~> 2.0"
     }
     local = {
