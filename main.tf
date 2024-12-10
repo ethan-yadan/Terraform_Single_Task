@@ -1,5 +1,18 @@
-# creating a docker network to allow communication between nginx docker and app docker 
+terraform {
+  required_providers {
+    docker = {
+      source = "hashicorp/docker"
+      version = "~> 3.0"
+    }
+    local = {
+      source = "hashicorp/local"
+      version = "~> 2.0"
+    }
+  }
+  required_version = ">= 1.0.0"
+}
 
+# creating a docker network to allow communication between nginx docker and app docker 
 
 provider "docker" {}
 
