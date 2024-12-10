@@ -59,7 +59,8 @@ resource "docker_container" "nginx_container" {
     name    = docker_network.app_network.name
     alias   = "nginx"
   }
-  depends_on = [docker_image.nginx_image.image_id]
+
+depends_on = [docker_image.nginx_image.image_id]
 }
 
 resource "docker_container" "app_container" {
