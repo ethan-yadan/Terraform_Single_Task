@@ -47,10 +47,14 @@ resource "docker_container" "nginx_container" {
     internal = 443
     external = 8443
   }
-  volumes = [
-    "/etc/nginx/certs:/etc/nginx/certs",
-    "./nginx.conf:/etc/nginx/nginx.conf"
-  ]
+  volumes {
+    host_path      = "/etc/nginx/certs"
+    container_path = "/etc/nginx/certs"
+  }
+  volumes {
+    host_path      = "./nginx.conf"
+    container_path = "/etc/nginx/nginx.conf"
+  }
   networks_advanced {
     name    = docker_network.app_network.name
     alias   = "nginx"
